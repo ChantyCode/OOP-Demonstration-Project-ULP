@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     {
         verticalInput = Input.GetAxis("Vertical");
         
-        rb.AddForce(Vector3.forward * speed * Time.deltaTime * verticalInput, ForceMode.Acceleration);
+        rb.AddForce(new Vector3(gameObject.transform.localRotation.x, 0, 0) * speed * Time.deltaTime * verticalInput, ForceMode.Acceleration);
         
         horizontalInput = Input.GetAxis("Horizontal");
 
