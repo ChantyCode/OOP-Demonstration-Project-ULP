@@ -6,12 +6,11 @@ public class ScalePlaneToScreen : MonoBehaviour
 {
     void Start()
     {
-        MatchPlaneToScreenSize();
     }
 
     void Update()
     {
-        
+        MatchPlaneToScreenSize();
     }
     private void MatchPlaneToScreenSize()
     {
